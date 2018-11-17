@@ -14,6 +14,7 @@
 		78D338A2219FBEA5007718DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D338A0219FBEA5007718DD /* LaunchScreen.storyboard */; };
 		78D338AD219FBEA5007718DD /* Loan_dTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D338AC219FBEA5007718DD /* Loan_dTests.swift */; };
 		78D338B8219FBEA5007718DD /* Loan_dUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D338B7219FBEA5007718DD /* Loan_dUITests.swift */; };
+		E691BE4921A070AC00804DAF /* PlanAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E691BE4821A070AC00804DAF /* PlanAViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		78D338B3219FBEA5007718DD /* Loan'dUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loan'dUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D338B7219FBEA5007718DD /* Loan_dUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan_dUITests.swift; sourceTree = "<group>"; };
 		78D338B9219FBEA5007718DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E691BE4821A070AC00804DAF /* PlanAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanAViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				78D33897219FBEA3007718DD /* AppDelegate.swift */,
 				78D33899219FBEA3007718DD /* ViewController.swift */,
+				E691BE4821A070AC00804DAF /* PlanAViewController.swift */,
 				78D3389B219FBEA3007718DD /* Main.storyboard */,
 				78D3389E219FBEA5007718DD /* Assets.xcassets */,
 				78D338A0219FBEA5007718DD /* LaunchScreen.storyboard */,
@@ -193,13 +196,16 @@
 				TargetAttributes = {
 					78D33893219FBEA3007718DD = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					78D338A7219FBEA5007718DD = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 78D33893219FBEA3007718DD;
 					};
 					78D338B2219FBEA5007718DD = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 78D33893219FBEA3007718DD;
 					};
 				};
@@ -257,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78D3389A219FBEA3007718DD /* ViewController.swift in Sources */,
+				E691BE4921A070AC00804DAF /* PlanAViewController.swift in Sources */,
 				78D33898219FBEA3007718DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +437,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZAFVSH738;
 				INFOPLIST_FILE = "Loan'd/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,7 +447,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AshiaNagi.Loan-d";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -447,7 +457,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZAFVSH738;
 				INFOPLIST_FILE = "Loan'd/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,7 +467,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AshiaNagi.Loan-d";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -474,7 +487,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AshiaNagi.Loan-dTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loan'd.app/Loan'd";
 			};
@@ -494,7 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AshiaNagi.Loan-dTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loan'd.app/Loan'd";
 			};
@@ -513,7 +526,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AshiaNagi.Loan-dUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Loan'd";
 			};
@@ -532,7 +545,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AshiaNagi.Loan-dUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Loan'd";
 			};
